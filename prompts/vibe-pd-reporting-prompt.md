@@ -1,9 +1,7 @@
 # Vibe App Prompt: David Yurman Product Development Reporting
 
 Paste everything below the line into monday Vibe. Upload `brand/david-yurman-wordmark-black.png`
-(and the white version) as the logo when Vibe asks for assets.
-
-Before you paste: replace every `[BRACKETED]` item with the real board or column name from the workspace.
+and `brand/david-yurman-wordmark-white.png` as the logo assets.
 
 ---
 
@@ -18,26 +16,27 @@ The people using it are PD leadership and team leads. They need to see where the
 
 ## Data sources (monday boards)
 
-Read live data from these boards. Don't use mock data unless a board is empty.
+Use the boards already connected to this app. Before building anything, inspect each connected board's columns and map them to the fields below. Tell me the mapping you chose, and ask me if a field is ambiguous or missing. Don't use mock data unless a board is empty.
 
-- **Styles / Projects board** `[BOARD NAME]`: one item per style. Columns:
-  - Season `[COLUMN]` (F27, S27, etc.)
-  - Current Stage `[COLUMN]`: Design → Concepts → Concepts CAD → Wax → CAD → Gemstones → Costing → Turned Over (T/O)
-  - A status per team `[COLUMNS]` with the values **In Queue / In Work / Complete**
-  - Designer (people) `[COLUMN]`, CAD Designer (people) `[COLUMN]`
-  - For each stage, the date it entered the queue, the date work started, and the date it finished `[COLUMNS]`
-  - CAD Iterations (number) `[COLUMN]`
-  - Turnover Due Date `[COLUMN]` and Turnover Actual Date `[COLUMN]`
-- **Seasons board** `[BOARD NAME]`: one item per season, with the deadlines for that season:
-  - Design Finalization Deadline, Concepts Submission Deadline, CAD Submission Deadline, Turnover Deadline `[COLUMNS]`
-- **Gemstones board** `[BOARD NAME]`: one item per stone, linked to a style. Columns:
-  - Season
-  - Out Type (QC / Repolish / Cert)
-  - Date Sent Out, Date Due Back, Date Returned
+**Styles / Projects board** (one item per style). Find:
+- Season (F27, S27, etc.)
+- Current Stage: Design → Concepts → Concepts CAD → Wax → CAD → Gemstones → Costing → Turned Over (T/O)
+- One status column per team with the values In Queue / In Work / Complete
+- Designer (people) and CAD Designer (people)
+- For each stage: the date it entered the queue, the date work started, and the date it finished
+- CAD Iterations (number)
+- Turnover Due Date and Turnover Actual Date
+
+**Seasons board** (one item per season). Find the deadlines per season:
+- Design Finalization Deadline, Concepts Submission Deadline, CAD Submission Deadline, Turnover Deadline
+- If there's no Seasons board, ask me for these deadlines per season and store them in the app's settings.
+
+**Gemstones board** (one item per stone, linked to a style). Find:
+- Season, Out Type (QC / Repolish / Cert), Date Sent Out, Date Due Back, Date Returned
 
 Rules for the numbers:
 - **"Weeks in X"** = (finish date − start date) ÷ 7, rounded to one decimal. "Weeks in X queue" uses the queue-entry date and the work-start date. If a style is still open, measure up to today.
-- **"On time"** = the style was submitted to (or finished) the stage on or before that season's deadline from the Seasons board.
+- **"On time"** = the style was submitted to (or finished) the stage on or before that season's deadline.
 - **"% of season"** = that count divided by the total number of styles in the season.
 
 ## Global layout
