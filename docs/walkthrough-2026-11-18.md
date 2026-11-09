@@ -24,7 +24,8 @@ Suggested order for 30 minutes: 5 min what changed · 15 min walk the Overview a
 | PDF export | Done. Export PDF button in the top bar, wordmark header, landscape. |
 | Costing tab | Built, from the Design Costing Log. |
 | Gemstones tab | Built from the Gemstones HJ Log, pending Monique's confirmation the team still uses it. |
-| Year-over-year view | Not yet. After this round. |
+| Year-over-year view | Done. "Trends" tab: per season or per year, styles in scope, avg CAD iterations, weeks in CAD and Concepts, on-time rates for CAD submission, concepts, show sample and production turnover. Reuses each tab's calculations. |
+| Timelines clickable | Done. Every Gantt uses the same component; click a season bar for the projects behind it. |
 
 ## Three data findings
 
@@ -62,6 +63,5 @@ Smaller note: only about 7% of styles have a concept project, so the Concepts co
 
 ## After this call
 
-- Year-over-year view (CAD iterations trend, on-time trend by season).
 - Delay finder, rebuilt against team deadlines once DY provides them.
 - Any drill-down column changes from walking the pop-outs together.
